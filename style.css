@@ -1,0 +1,294 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    color:blanchedalmond;
+    background-color: #838383;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+    text-shadow: 0.5px 0.1px black;
+}
+
+
+header * {
+    display: inline;
+    height: 50px;
+    text-decoration: none;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+li:hover {
+    font-size: 25px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+.coder {
+    font-family: 'Courier New', monospace;
+    color: #383737;
+}
+
+.coder.hello {
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    animation: typewriter 3s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 18em;}
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+.coder.border {
+    border-radius: 5px;
+    margin: auto;
+    padding-top: 1px;
+    background:#ccc;
+    text-align: left;
+    font-size: 13px;
+}
+
+.coder.pg {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 350px;
+    background: #383737;
+    color: #fafafa;
+}
+
+.skill {
+    /* border: 1px solid blanchedalmond;
+    margin-right: 10px;
+    font-weight: 500;
+    display: inline-block;
+    width: auto;
+    padding: 7px 18px;
+    border-radius: 8px; */
+}
+
+.skill li {
+    border: 1px solid blanchedalmond;
+    margin-right: 10px;
+    font-weight: 500;
+    display: inline-block;
+    width: auto;
+    padding: 7px 18px;
+    border-radius: 8px;
+}
+
+.fancy {
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 1px 2.5px black;
+}
+.section-inner {
+    padding: 0px;
+    display: inline-block;
+    text-shadow: 1px 1px black;
+
+}
+
+.section-inner h2 {
+    font-size: 2.5em;
+}
+
+.section-inner h3 {
+    font-size: 1.5em;
+}
+
+.section-inner p {
+    font-size: 1em;
+}
+
+#main {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.ibb.co/DzMK7yx/IMG-0188.jpg');
+    background-attachment: fixed;
+}
+
+#social {
+    margin: 20px 10px;
+}
+
+.activities-heading {
+    display: flex;
+    position: static;
+    text-decoration: none;
+    margin-top: 20px 0;
+    margin-bottom: 20px;
+}
+
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative; /* was relative */
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px; /* initially 27px */
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* mail button class*/
+.mailBtn{
+    background: #B23121;
+}
+
+.mailBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e0"; /* add mail icon */
+}
+
+.mailBtn:hover{
+      color: #B23121;
+      background: #fff;
+      border-color: #B23121;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0e76a8;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0e76a8;
+      background: #fff;
+      border-color: #0e76a8;
+}
+
+/*github button class*/
+.githubBtn{
+    background: #333;
+}
+
+.githubBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09b"; /* add github inkedin icon */
+}
+
+.githubBtn:hover{
+      color: #333;
+      background: #fff;
+      border-color: #333;
+}
+
+.horizontal-scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    background-color: blanchedalmond;
+    padding: 15px;
+    box-shadow: 0 3px 3px #999;
+    color: #838383;
+    text-shadow: 1px 1px blanchedalmond;
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+}
+
+.card:hover {
+    font-size: 20px;
+}
+
+
+.card.geng {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.ibb.co/Yb1rRhn/Whats-App-Image-2021-06-25-at-11-17-44-PM.jpg');
+}
+
+.card.sdia {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.ibb.co/DDmktbf/sdia.jpg');
+}
+
+
+.card.wchs {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.ibb.co/fSyYft0/wc.jpg');
+}
+
+
+header a {
+   font-family: 'Abril Fatface', cursive;
+   
+}
+
+
+#menu > li.sub ul {
+    list-style: none;
+    position: absolute;
+    top: -1000em;
+    left: 0px;
+}
+  
+  
+#menu li.sub ul li a {
+    display: inline;
+}
+  
+#menu > li.sub:hover ul {
+    top: 3em;
+}
+  
+#menu{
+    text-align: center;
+}
+  
+li{
+    display:inline-block;
+}
