@@ -5,8 +5,8 @@ body {
     margin: 0;
     margin-top: 50px;
     font-family: 'Raleway', sans-serif;
-    color:blanchedalmond;
-    background-color: #838383;
+    color:#383737;
+    background-color: #eee;
 }
 
 header {
@@ -104,12 +104,12 @@ section {
     font-weight: 500;
     display: inline-block;
     width: auto;
-    padding: 7px 18px;
-    border-radius: 8px; */
+    padding: 7px 18px; */
+    border-radius: 8px;
 }
 
 .skill li {
-    border: 1px solid blanchedalmond;
+    border: 1.5px solid #383737;
     margin-right: 10px;
     font-weight: 500;
     display: inline-block;
@@ -120,13 +120,10 @@ section {
 
 .fancy {
     font-family: 'Abril Fatface', cursive;
-    text-shadow: 1px 2.5px black;
 }
 .section-inner {
     padding: 0px;
     display: inline-block;
-    text-shadow: 1px 1px black;
-
 }
 
 .section-inner h2 {
@@ -135,6 +132,7 @@ section {
 
 .section-inner h3 {
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .section-inner p {
@@ -228,8 +226,8 @@ section {
 }
 
 .horizontal-scroll {
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
     white-space: nowrap;
 }
 
