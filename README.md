@@ -1,1 +1,0 @@
-# aikocny.github.io

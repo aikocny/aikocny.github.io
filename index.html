@@ -1,220 +1,251 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Aiko Coanaya</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-        <link rel="icon" href="favpng.png">
-    </head>
 
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#main">Home</a>
-                    </li>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="description" content="Simple potfolio website for Aiko Coanaya" />
+	<meta name="keywords" content="HTML" />
+	<meta name="author" content="Aiko Coanaya" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Aiko Coanaya</title>
+	<link href="images/favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
+</head>
 
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
+<body>
+    <header>
+        <nav aria-label="Navigation Bar">
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#involvement">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <li>
-                        <a href="#activities">Activities</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+    <main>
+        <section id = "intro">
+            <div class = "middle">
+                <h1>Aiko Coanaya</h1>
+                <p>software engineer intern based in san diego, ca</p>
+            </div>
+        </section>
+       
+        <section id="about">
+            <h2>About Me</h2>
+            <div class = "personal">
+                <p>Hello, my name is Aiko Coanaya. My friends usually call me Aiko. I am a rising junior at UC San Diego studying Computer Science. 
+                </p>
+                <aside><p>I would love to chat with you! Please send me an email.</p></aside>
+                <form class="gform" method="POST" data-email="aikocoanaya@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbxjQrUhyl46cHnA_GrmsxrUaCDH-bAbR5rHGqrh-z1HU-8ETZnWVshKbP1zfwIJ-VQC/exec">
+
+                <div class="form-elements" style="text-align:left; margin:5%;">
+                    <fieldset class="pure-group">
+                      <label for="name">Name: </label>
+                      <input id="name" name="name" placeholder="Name" />
+                    </fieldset>
+              
+                    <fieldset class="pure-group">
+                      <label for="message">Message: </label>
+                      <textarea id="message" name="message" rows="5" cols="100"
+                      placeholder="Tell me what's on your mind..."></textarea>
+                    </fieldset>
+              
+                    <fieldset class="pure-group">
+                      <label for="email"><em>Your</em> Email Address:</label>
+                      <input id="email" name="email" type="email" value=""
+                      required placeholder="your.name@email.com"/>
+                    </fieldset>
+                    <br>
+                    <button class="button-success pure-button button-xlarge">
+                        <i class='bx bx-paper-plane'></i>Send</button>
+                </div>
+                </form>
+              
+                  <!-- Customise the Thankyou Message People See when they submit the form: -->
+                  <div class="thankyou_message" style="display:none;">
+                    <h2><em>Thanks</em> for contacting me!
+                      I will get back to you soon!</h2>
+                  </div>
+            </div>
+        </section>
+
+        <script data-cfasync="false" src="form-submission-handler.js"></script>
+
+        <section id = "education">
+            <h2>Education</h2>
+            <div class = "university">
+                <img class = "bounce" src="images/ucsd.webp" alt="ucsd" width="100" height="100">
+                <p>UC San Diego</p>
+                <p>Computer Science</p>
+                <p>2020 - 2024</p>
+            </div>
+
+            <div class = "coursework">
+                <h3>Relevant Coursework</h3>
+                <details open>
+                    <summary>Computer Science</summary>
+                    <ul>
+                        <li>CSE 11 - Introduction to Object-Oriented Programming</li>
+                        <li>CSE 12 - Basic Data Structures and Object-Oriented Design</li>
+                        <li>CSE 15L - Software Tools and Techniques Laboratory</li>
+                        <li>CSE 20 - Discrete Mathematics</li>
+                        <li>CSE 21 - Mathematics for Algorithms and Systems</li>
+                        <li>CSE 30 - Computer Organization and Systems Programming</li>
+                        <li>CSE 100 - Advanced Data Structures</li>
+                        <li>CSE 101 - Design and Analysis of Algorithms</li>
+                        <li>CSE 105 - Theory of Computability</li>
+                        <li>CSE 110 - Software Engineering</li>
+                        <li>CSE 134B - Web Client Languages</li>
+                        <li>CSE 198 - Directed Group Study</li>
+                    </ul>
+                </details>
+
+                <details open>
+                    <summary>Mathematics</summary>
+                    <ul>
+                        <li>MATH 18 - Linear Algebra</li>
+                        <li>MATH 20B - Calculus for Science and Engineering</li>
+                        <li>MATH 20C - Calculus for Analytic Geometry for Science and Engineering</li>
+                        <li>MATH 183 - Statistical Methods</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class = "programming">
+                <h3>Technical Skills</h3>
+                <ul class="lang">
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>JSON</li>
+                    <li>Unix</li>
+                    <li>Git</li>
+                    <li>R</li>
+
                 </ul>
-            </nav>
-        </header>
+            </div>
 
-        <main>
-            <section id="main">
-                <div class = "section-inner">
-                    <h1 class = "coder hello">print("Hello World!")</h1>
-                    <div class = "coder border">
-                        <p class = "coder pg">
-                            <br><br>
-                            >>> Aiko.fullName
-                            <br> "Aiko Coanaya"
-    
-                            <br> <br>
-                            >>> Aiko.origin
-                            <br> "Tangerang Selatan, Indonesia"
-    
-                            <br> <br>
-                            >>> Aiko.university
-                            <br> "University of California San Diego"
-    
-                            <br> <br>
-                            >>> Aiko.major
-                            <br> "Computer Science"
-    
-                            <br> <br>
-                            >>> Aiko.expectedGraduation
-                            <br> "June 2024"
-    
-                            <br> <br>
-                            >>> Aiko.interests
-                            <br> ["coding", "boba", "archery", "swimming", "music", "travelling"]
-    
-                        </p>
-                    </div>
-                </div>
-                
-            </section>
-            <section id="about">
-                <div class = "section-inner">
-                    <h2 class = "fancy">
-                        <br><br><br><br><br>
-                        About me
-                    </h2>
-
-                    <p>
-                        I am Aiko Coanaya, but people usually 
-                        call me <i>Aiko</i> or <i>Ai</i>. I am a rising sophomore
-                        studying Computer Science at University of California San Diego.
-                    </p>
-
-                    <div class = "picture">
-                        <a href="transparent.png"></a><img src="transparent.png" alt="mypic-potrait" width=20%></a>
-                    </div>
-
-                    <h3>
-                        Education
-                    </h3>
-
-                    <p>
-                        University of California San Diego
-                        <br> Bachelor of Science in Computer Science
-                        <br> 2020 - 2024
-                    </p>
-
-                    <h3>
-                        Technical Skills
-                    </h3>
-
-                    <div class = "skill">
-                        <ul>
-                            <li>
-                                C/C++
-                            </li>
-
-                            <li>
-                                Java
-                            </li>
-
-                            <li>
-                                Python
-                            </li>
-
-                            <li>
-                                HTML / CSS
-                            </li>
-
-                            <li>
-                                MATLAB
-                            </li>
-
-                            <li>
-                                LaTeX
-                            </li>
-                        </ul>
-                    </div>
-
-                    <h3>
-                        Languages
-                    </h3>
-
-                    <div class = "skill">
-                        <ul>
-                            <li>
-                                Bahasa Indonesia
-                            </li>
-
-                            <li>
-                                English
-                            </li>
-
-                            <li>
-                                Chinese Mandarin
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id = "activities">
-                <div class = "section-inner">
-                    <h2 class = "fancy">
-                        <br><br><br><br>
-                        Some of my activities include:
-                    </h2>
-
-                    <div class = "horizontal-scroll">
-                        <br>
-                        <div class = "card sdia"> 
-                            <p> 
-                                Treasurer
-                                <br>San Diego Indonesian Association
-                            </p>
-                        </div>
-    
-                        <div class = "card geng"> 
-                            <p>
-                                Teaching Assistant
-                                <br>Yayasan Generasi Maju Berkarya
-                            </p>
-                        </div>
-    
-                        <div class = "card wchs"> 
-                            <p>
-                                Member
-                                <br>Warren College Honors Society
-                            </p>
-                        </div>
-                    </div>
-
-                
-                </div>
-
-
-                
-            </section>
-
-            <section id="contact">
-                <div class = "section-inner">
-                    <h2 class = "fancy"> I would love to connect with you. </h2>    
-                    <p><br> Please contact me through the following links:</p>  
-
-                    <div class = "social">
-
-                        <h2>
-                            <ul id="menu">
-                                <li class="sub">
-                                   <a class="mailBtn smGlobalBtn" href="mailto:acoanaya@ucsd.edu"></a>
-                               </li>
+            <div class = "language">
+                <h3>Languages</h3>
+                <ul class="lang">
+                    <li>Bahasa Indonesia</li>
+                    <li>English</li>
+                    <li>Chinese Mandarin</li>
+                </ul>
+            </div>
+            <br><br>
+        </section>
         
-                               <li>
-                                   <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/aikocoanaya/" target="_blank"></a>
-                               </li>
-        
-                               <li>
-                                   <a class="githubBtn smGlobalBtn" href="https://github.com/aikocny" target="_blank"></a>
-                               </li>
-                           </ul>
-                        </h2>
+        <section id = "involvement">
+            <h2>Experience</h2>
+            <h3 class="academics">Academics</h3>
+            <ul class = "boxes">
+                <li>
+                    <div class = "box">
+                        <img src="images/bd.png" alt="bd" height=60 width=130>
+                        <h3 style="line-height: 100%;">Becton Dickinson</h3>
+                        <h4 style="line-height: 100%;">Software Quality Engineer Intern<br>June 2022 - Present</h4>
+                        <p style="text-align:left;"><b>Description:</b> Participate and assist in the software quality engineering and testing activities of software development which include test case development and manual testing</p>
                     </div>
-
-                </div>
-
+                </li>
+                <li>
+                    <div class = "box">
+                        <img src="images/cse.webp" alt="cse" height=100 width=129>
+                        <h3 style="line-height: 100%;">UC San Diego <br>Computer Science and Engineering</h3>
+                        <h4 style="line-height: 100%;">Undergraduate Research Assistant<br>August 2021 - Present</h4>
+                        <p style="text-align:left;"><b>Description:</b> Built a CSE 20: Discrete Mathematics website for Professor Mia Minnes</p>
+                        <a href="https://discrete-math-for-cs.github.io/website/index.html" target="_blank">Website</a>
+                    </div>
+                </li>
+                <li>
+                    <div class = "box">
+                        <img src="images/wic.webp" alt="wic" height=100 width=97>
+                        <h3>Women in Computing</h3>
+                        <h4 style="line-height: 100%;">Web Development Chair<br>May 2022- Present</h4>
+                        <p style="text-align:left;"><b>Description</b> In charge of maintaining the website and updating the content regularly</p>
+                        <a href="https://wic.ucsd.edu/" target="_blank">Website</a>
+                    </div>
+                </li>
+                <li>
+                    <div class = "box">
+                        <img src="images/fye.webp" alt="fye" height=100 width=107>
+                        <h3 style="line-height: 100%;">UC San Diego <br>FIrst Year Experience</h3>
+                        <h4 style="line-height: 100%;">Discussion Leader<br>September - December 2021</h4>
+                        <p style="text-align:left;"><b>Description:</b> Served as a Discussion Leader for ERC 1: First Year Experience</p>
+                        <!-- <a href="project1.html">Full Description</a> -->
+                    </div>
+                </li>
                 
-            </section>
-        </main>
-    
-    </body>
+                <li>
+                    <div class = "box">
+                        <img src="images/wc.webp" alt="warren" height=100 width=100>
+                        <h3>Warren College Honors Society</h3>
+                        <h4 style="line-height: 100%;">Member<br>Fall 2020 - Present</h4>
+                        <p style="text-align:left;"><b>Description:</b> The Honors Society at Warren College promotes scholarship, leadership, and academic integrity by providing high-achieving students with academic and co-curricular enrichment programs. 
+                            Students who receive an invitation should maintain a minimum cumulative UCSD GPA of 3.7 or above.</p>
+                        <a href="https://warren.ucsd.edu/academics/honors.html" target="_blank">Website</a>
+                    </div>
+                </li>
+                <li>
+                    <div class = "box">
+                        <img src="images/geng.webp" alt="geng" height=100 width=100>
+                        <h3>Generation Girl</h3>
+                        <h4 style="line-height: 100%;">CS 101 Teaching Assistant<br>June 2021</h4>
+                        <p style="text-align:left;"><b>Description:</b> Served as a Teaching Assistant for a non-profit organization that introduces teenagers to Computer Science.</p>
+                        <a href="https://www.generationgirl.org/home-english" target="_blank">Website</a>
+                    </div>
+                </li>
+            </ul>
+
+            <h3 class="academics">CLubs</h3>
+            <ul class = "boxes">
+                <li>
+                    <div class = "box">
+                        <img src="images/sdia.webp" alt="sdia" height=100 width=245>
+                        <h3>SDIA<br>San Diego Indonesian Association</h3>
+                        <h4 style="line-height: 100%;">Vice President<br>May 2022 - Present</h4>
+                        <p style="text-align:left;"><b>Responsibility:</b> Maintain communication and interactions with the SDIA community and campus organizations.</p>
+                    
+                        <h4 style="line-height: 100%;">Treasurer<br>May 2021 - May 2022</h4>
+                        <p style="text-align:left;"><b>Responsibility:</b> Collect dues and maintain records of all revenue and expenditures, including receipts. Write and present bills requesting funding for SDIA events.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class = "box">
+                        <img src="images/nasional.png" alt="sdia" height=120>
+                        <h3>PERMIAS Nasional</h3>
+                        <h4 style="line-height: 100%;">Director of Digital Communication<br>July 2022 - Present</h4>
+                        <p style="text-align:left;"><b>Responsibility:</b> Handle and maintain PERMIAS Nasional website and monthly newsletters, delegate tasks to officers.</p>
+                    
+                        <h4 style="line-height: 100%;">Technology and Digital Transformation Officer<br>July 2021 - July 2022</h4>
+                        <p style="text-align:left;"><b>Responsibility:</b> Maintain PERMIAS Nasional website and assist in technical matters for other departments.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+        <script src="./index.js">
+        </script>
+
+    </main>
+
+    <footer>
+        <hr />
+            <a href="https://github.com/aikocny">GitHub</a> |
+            <a href="https://www.linkedin.com/in/aikocoanaya/">LinkedIn</a> |
+            <a href="mailto:acoanaya@ucsd.edu">Email</a>
+            <p><em>Created by Aiko with ♡ 2022</em></p>
+    </footer>
+
+</body>
+
 </html>
