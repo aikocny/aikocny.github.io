@@ -13,7 +13,7 @@
     --beige: #f8e7d1;
     --softpink: #fcf3f3;
     --pink: rgb(250, 116, 138);
-    --standard: 1.2rem;
+    --standard: 1.3rem;
 }
 
 header {
@@ -32,23 +32,23 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.1rem;
     padding-top: 4%;
     margin-left: 2%;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3.1rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1rem;
 }
 
 h4 {
     line-height: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 p {
